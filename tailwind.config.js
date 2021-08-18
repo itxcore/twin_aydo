@@ -13,6 +13,7 @@ module.exports = {
         },
     },
     plugins: [
+        require('@tailwindcss/forms'),
         plugin(function({ addVariant, e }) {
             addVariant('my-message', ({ modifySelectors, separator }) => {
                 modifySelectors(({ className }) => {
